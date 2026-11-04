@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Design Orchestrator"
+  short_description: "建筑设计证据管理、问题定义、多方案空间推敲与批判评审工作流"
+  default_prompt: "使用 $architecture-design，根据已有材料识别当前阶段，沿证据—问题—策略—空间操作—验证推进建筑课程设计。"
