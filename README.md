@@ -1,40 +1,18 @@
-# Agent Skills
+# Architecture Design Skill
 
-Agent Skills are folders of instructions, scripts, and resources that AI agents can discover and use to perform at specific tasks. Write once, use everywhere.
+本仓库只维护自定义建筑课程设计 Skill：[`architecture-design`](skills/architecture-design/SKILL.md)。它不是 OpenAI 官方 Skill。
 
-Codex uses skills to help package capabilities that teams and individuals can use to complete specific tasks in a repeatable way. This repository catalogs skills for use and distribution with Codex.
+## 内容
 
-Learn more:
-- [Using skills in Codex](https://developers.openai.com/codex/skills)
-- [Create custom skills in Codex](https://developers.openai.com/codex/skills/create-skill)
-- [Agent Skills open standard](https://agentskills.io)
+- 场地证据、问题定义、功能策划与方案比较
+- 平剖面、流线及三维模型推敲
+- 教师草图忠实转绘、真实基地边界适配
+- 模型修改、屋顶几何与文件交付验证
 
-## Installing a skill
+## 安装与升级
 
-Skills in [`.system`](skills/.system/) are automatically installed in the latest version of Codex.
+将 `skills/architecture-design` 整个目录安装到本机的 `CODEX_HOME/skills/architecture-design`。已有安装请先比较与备份。
 
-To install [curated](skills/.curated/) or [experimental](skills/.experimental/) skills, you can use the `$skill-installer` inside Codex.
+详见 [安装说明](skills/architecture-design/INSTALL.md)、[版本记录](skills/architecture-design/CHANGELOG.md) 和 [升级同步流程](skills/architecture-design/references/github-maintenance.md)。
 
-Curated skills can be installed by name (defaults to `skills/.curated`):
-
-```
-$skill-installer gh-address-comments
-```
-
-For experimental skills, specify the skill folder. For example:
-
-```
-$skill-installer install the create-plan skill from the .experimental folder
-```
-
-Or provide the GitHub directory URL:
-
-```
-$skill-installer install https://github.com/openai/skills/tree/main/skills/.experimental/create-plan
-```
-
-After installing a skill, restart Codex to pick up new skills.
-
-## License
-
-The license of an individual skill can be found directly inside the skill's directory inside the `LICENSE.txt` file.
+本仓库不存放真实项目图纸、模型、照片或论文。设计建议与概念验证不能代替正式工程合规审查。
